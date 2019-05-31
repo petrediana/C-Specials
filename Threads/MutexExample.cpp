@@ -36,14 +36,14 @@ int main()
 {
     std::cout << "Main thread going on...\n";
 
-	std::cout << "Threads from lambda function syncronized ->\n\n";
+	std::cout << "Threads from lambda function synchronized ->\n\n";
 	std::thread thread_obj1(lambda_show);
 	std::thread thread_obj2(lambda_show);
 
 	thread_obj1.join();
 	thread_obj2.join();
 
-	std::cout << "Threads from class syncronized -> \n\n";
+	std::cout << "Threads from class synchronized -> \n\n";
 
 
 	/*std::thread thread_obj3((MyTestClass{}));
